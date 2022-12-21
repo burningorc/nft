@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Outfit', sans-serif;
+}
+body {
+    background-color: hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    background-color: hsl(216, 50%, 16%);
+    padding: 2rem;
+    width: 30rem;
+    border-radius: 1.2rem;
+}
+.symbol {
+    position: relative;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    min-height: 23rem;
+    border-radius: 1rem;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 1rem;
+    opacity: 0;
+}
+.icon {
+    position: absolute;
+    width: 3.7rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    opacity: 0;
+}
+.icon img {
+    max-width: 100%;
+}
+.symbol:hover .overlay {
+    opacity: 0.5;
+}
+.symbol:hover .icon {
+    opacity: 0.9;
+}
+.text h3 {
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.text h3:hover {
+    color: hsl(178, 100%, 50%);
+}
+.text p {
+    font-size: 1.4rem;
+    color: hsl(215, 51%, 70%);
+    margin-top: 1.6rem;
+}
+.eth-days {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    font-size: 1.45rem;
+}
+.eth-days .eth {
+    display: flex;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}
+.eth-days img {
+    margin-right: 0.6rem;
+}
+.eth-days .days {
+    display: flex;
+    align-items: center;
+    color: hsl(215, 51%, 70%);
+}
+hr {
+    border-color: hsla(215, 32%, 27%, 0.5);
+}
+.creator {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+.creator .avatar {
+    background-image: url(./images/image-avatar.png);
+    background-size: cover;
+    min-height: 3.5rem;
+    width: 3.5rem;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 1.8rem;
+}
+.creator p {
+    font-size: 1.4rem;
+    color: hsl(215, 51%, 70%);
+}
+.creator p span {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.creator p span:hover {
+    color: hsl(178, 100%, 50%);
+}
